@@ -6,7 +6,7 @@ age = 0
 articles = []
 articles_idx = 0
 
-## HTML 주는 부분::새로만든 파일
+## HTML 주는 부분::새로만든
 @app.route('/')
 def home():
     return 'This is Home!'
