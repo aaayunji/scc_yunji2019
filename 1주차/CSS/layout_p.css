@@ -1,0 +1,19 @@
+body {
+        background-color: #FFE400;
+      }
+      .yellow-color {
+        font-size: 150%;
+        margin: 100px;
+      }
+      
+      #blue-color {
+        color: #0100FF;
+        padding: 100px;
+      }
+
+      .bold {
+        font-weight: 700;
+        font-size: 150%;
+        color: red;
+        line-height: 1.0;
+      }
