@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title> 간에 좋은 가네굿 </title>
+
+	<style>
+		.container {
+			border : 1px solid black;
+			width : 600px;
+			margin : auto;
+			padding : 30px;
+
+		}
+		.img {
+			line-height: 30px; 
+			text-align: center
+		}
+	
+		.product,
+		.price {
+			display : inline;
+		}
+		.select {
+			width : 155px;
+			height : 23px;
+			border-radius : 5px;
+		}
+		.box {
+			border-radius : 5px;
+		}
+		label {
+			display : inline-block;
+			width : 120px; 
+		}
+
+		.btn { 
+			width : 200px;
+			height : 30px;
+			border-radius : 5px;
+			background-color : green;
+			margin : 20px;
+			margin-left : 200px;
+			color : white;
+		}
+
+	      * {
+    	   font-family: Georgia, "Malgun Gothic", serif;
+        }
+	
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="img">
+			
+			<img src="https://thumbnail14.coupangcdn.com/thumbnails/remote/492x492ex/image/product/image/vendoritem/2019/03/04/3190893742/e5a84140-fc55-4bcc-ba22-806aea1f177d.jpg"> 
+		
+		</div>
+		
+			<div>
+			
+				<h3 class="product"> 가네굿 프리미엄 진 </h3>
+				<h6 class="price"> 가격: 39,000원/개 </h6>
+
+				<p class="info"> 이 상품으로 말할 것 같으면 용왕이 찾지 못한 토끼의 간을 찾아 빨간 망토의 늑대와 아기 돼지 삼형제의 숨결이 고루 녹아있는 먹으면 120세까지 살 수 있다는 상품이다.
+				 </p>
+
+			</div>		
+
+
+
+			<h3 class="order"> 주문하기 </h3>
+
+			<form class="form">
+			
+			 	<div class="form">
+
+				    <label for="주문자성함">주문자성함: </label>
+				    <input type="text" name="name" class="box" id="order-name" placeholder="">
+				
+				</div>
+
+				<div class="form">
+
+				 	<label for="수량">수량: </label>
+			    	<select class="select" required>
+						<option value="">선택하세요</option>
+						<option value="1">1 개</option>
+						<option value="2">2 개</option>
+						<option value="3">3 개</option>
+					</select>
+				
+				</div>
+
+				<div class="form">
+
+	 			    <label for="주소">주소: </label>
+				    <input type="text" name="address"class="box" id="order-address" placeholder="">
+				
+				</div>
+
+				<div class="form">
+
+				    <label for="전화번호">전화번호: </label>
+				    <input type="text" name="phone" class="box" id="order-phone" placeholder="">
+				 
+				 </div>
+
+				 <div>
+
+				 	<button type="submit" class="btn" onclick="make_order()">주문하기</button>
+
+				 </div>
+
+			</form>
+
+
+</body>
+</html>
