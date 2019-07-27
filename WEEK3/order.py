@@ -4,7 +4,7 @@ app = Flask(__name__)
 orders = []
 
 
-@app.route('/order',methods=['POST'])
+@app.route('/',methods=['POST'])
 def post_order():
 
     global order_form
@@ -12,9 +12,9 @@ def post_order():
     name = request.form['name']
     quantity = request.form['quantity']
     address = request.form['address']
-    phone = request.form['phone']
+    number = request.form['phone']
 
-    order_form={'name':name ,'quantity':quantity,'address':address,'phone':phone}
+    order_form={'name':name,'quantity':quantity,'address':address,'phone':number}
     orders.append(order_form)
 
     return jsonify({'result':'success'})

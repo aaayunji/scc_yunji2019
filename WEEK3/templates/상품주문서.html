@@ -51,6 +51,9 @@
 	
 	</style>
 
+	<script	src="{{ url_for('static', filename='js/orderjs.js')}}">
+	</script>
+
 </head>
 
 <body>
@@ -81,7 +84,7 @@
 			 	<div class="form">
 
 				    <label for="주문자성함">주문자성함: </label>
-				    <input type="text" name="name" class="box" id="order-name" placeholder="">
+				    <input type="text" name="name" class="box" id="name" placeholder="">
 				
 				</div>
 
@@ -100,14 +103,14 @@
 				<div class="form">
 
 	 			    <label for="주소">주소: </label>
-				    <input type="text" name="address"class="box" id="order-address" placeholder="">
+				    <input type="text" name="address" class="box" id="address" placeholder="">
 				
 				</div>
 
 				<div class="form">
 
 				    <label for="전화번호">전화번호: </label>
-				    <input type="text" name="phone" class="box" id="order-phone" placeholder="">
+				    <input type="text" name="phone" class="box" id="number" placeholder="">
 				 
 				 </div>
 
